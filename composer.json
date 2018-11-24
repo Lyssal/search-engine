@@ -1,0 +1,20 @@
+{
+    "name": "lyssal/search-engine",
+    "description": "Using external search engines (like Qwant or Google) to add a search form in your website.",
+	"license" : "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rémi Leclerc",
+            "homepage": "http://www.lyssal.com/"
+        }
+    ],
+    "require": {
+        "lyssal/lib-php": "~0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lyssal\\SearchEngine\\": "src/"
+        }
+    }
+}
