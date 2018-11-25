@@ -59,7 +59,7 @@ abstract class AbstractSetting implements SettingInterface
     /**
      * @see \Lyssal\SearchEngine\Setting\SettingInterface::setWebsite()
      */
-    public function setWebsite(string $website): SettingInterface
+    public function setWebsite(?string $website): SettingInterface
     {
         $this->website = $website;
 
@@ -69,9 +69,9 @@ abstract class AbstractSetting implements SettingInterface
     /**
      * Get the website.
      *
-     * @return string The website
+     * @return string|null The website
      */
-    public function getWebsite(): string
+    public function getWebsite(): ?string
     {
         return $this->website;
     }

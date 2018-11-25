@@ -30,10 +30,10 @@ interface SettingInterface
     /**
      * Set the website.
      *
-     * @param string $website The website
+     * @param string|null $website The website
      * @return \Lyssal\SearchEngine\Setting\SettingInterface Self
      */
-    public function setWebsite(string $website): SettingInterface;
+    public function setWebsite(?string $website): SettingInterface;
 
     /**
      * Generate the search URL.
